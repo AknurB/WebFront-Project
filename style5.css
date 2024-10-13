@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: #c98c96; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img{
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 70px;
+    padding-bottom: 0px;
+    background-color: #f4f4f4;
+}
+
+.introduction {
+    max-width: 50%;
+}
+
+.introduction h2 {
+    font-size: 36px;
+    color: #c98c96;
+    margin-bottom: 7px;
+    font-family: 'Georgia', serif;
+}
+
+.introduction h1 {
+    font-size: 49px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.introduction h3 {
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.profile-image img{
+    width: auto;
+    height: 504px;
+}
+
+.family{
+display: flex;
+flex-direction: column;
+}
+
+.family-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.family-header h1 {
+    font-size: 60px;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.family-header .live {
+    font-size: 30px;
+    color: #d47783; 
+    font-family: 'Brush Script MT', cursive;
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    padding: 30px;
+}
+
+.family-member {
+    text-align: center;
+}
+
+.family-member img {
+    width: 100px;
+    height: auto;
+}
+
+.family-member h2 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    margin: 10px 0;
+}
+
+.family-member p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.education-header {
+    text-align: center;
+    padding: 17px 0;
+}
+
+.education-header h1 {
+    font-size: 60px;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.education-header .author {
+    font-size: 30px;
+    color: #d47783; 
+    font-family: 'Brush Script MT', cursive;
+}
+
+.education-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 30px;
+}
+
+.education-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.education-block h2 {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.education-block h3 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.education-block ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.education-block ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.education-block p {
+    font-size: 14px;
+    color: #666;
+}
+
+.education-block:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.education-block::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 20px;
+    background-color: #ebb2b2;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+
+.hobby{
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hobbies-header h1 {
+    font-size: 60px;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.hobbies-header .favourite {
+    font-size: 30px;
+    color: #d47783; 
+    font-family: 'Brush Script MT', cursive;
+}
+
+.hobbies-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+}
+
+.hobby-item {
+    text-align: center;
+    max-width: 250px;
+}
+
+.hobby-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hobby-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact-header h1 {
+    font-size: 60px;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.contact-header .withme {
+    font-size: 30px;
+    color: #d47783; 
+    font-family: 'Brush Script MT', cursive;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 180px;
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #c98c96; 
+    text-decoration: underline; 
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item img:hover {
+    transform: scale(1.2); 
+}
+
+.education-table {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.education-table h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.education-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; 
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.education-table th {
+    background-color: #c98c96; 
+    font-weight: bold;
+    color: black; 
+}
+
+.education-table td {
+    font-size: 16px;
+    color: #666; 
+}
+
+@media(max-width: 923px){
+    .education-block { 
+        width: 350px;
+    }
+}
+
+@media (max-width: 867px) {
+    .family-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns in one row */
+        gap: 20px;
+    }
+    .profile-image img{
+        width: 350px;
+        height: 450px;
+    }
+    .introduction p {
+        font-size: 15px;
+    }
+    .introduction h1 {
+        font-size: 40px;
+    }
+    .introduction h2{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 825px){
+    .education-grid {
+        flex-direction: column;
+        gap: 20px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .hobbies-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hobbies-header h1 {
+        font-size: 40px;
+    }
+    .education-header h1{
+        font-size: 40px;
+    }
+    .education-table table, .education-table th, .education-table td {
+        font-size: 14px;
+    }
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .introduction {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .profile-image img{
+        width: 380px;
+        height: 450px;
+    }
+}
+
+@media(max-width: 545px){
+    header nav ul{
+        display: none;
+    }
+    header{
+        padding: 25px;
+    }
+    header img{
+        display: block;
+        width: 25px;
+    }
+    .contact-header span{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-header span{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-header h1 {
+        font-size: 45px;
+    }
+    .hobby-item p {
+        font-size: 12px;
+    }
+    .education-header span{
+        display: flex;
+        flex-direction: column;
+    } 
+    .education-block p{
+        font-size: 12px; 
+    }
+    .education-block ul li {
+        font-size: 12px;
+    }
+    .education-block h2{
+        font-size: 24px;
+    }
+    .education-header h1{
+        font-size: 35px;
+    }
+    .education-block { 
+        width: 290px;
+    }
+    .family-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns in one row */
+        gap: 20px;
+    }
+    .family-header h1 {
+        font-size: 45px;
+    }
+    .introduction h1 {
+        font-size: 35px;
+    }
+    .introduction h2{
+        font-size: 23px;
+    }
+    .introduction h3{
+        font-size: 20px;
+    }
+    .profile-image img{
+        width: 350px;
+        height: 400px;
+    }
+}
+
+@media(max-width: 400px){
+    .introduction h1 {
+        font-size: 26px;
+    }
+    .introduction p{
+        font-size: 13px;
+    }
+    .introduction h2{
+        font-size: 20px;
+    }
+}
+
