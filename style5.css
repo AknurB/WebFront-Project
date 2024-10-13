@@ -1,27 +1,31 @@
+/* Reset default styles to ensure consistency across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling - sets font, background, text color, and line height */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    
 }
 
+/* Header styling with a pink background and centered navigation */
 header {
     background-color: #c98c96; 
     padding: 20px 0;
     text-align: center;
 }
 
-header img{
+/* Hides the burger icon by default */
+header img {
     display: none;
 }
 
+/* Navigation styling - horizontal layout with space between links */
 header nav ul {
     list-style: none;
     display: flex;
@@ -29,10 +33,12 @@ header nav ul {
     gap: 30px;
 }
 
+/* Each navigation item is inline and clickable */
 header nav ul li {
     display: inline-block;
 }
 
+/* Link styling - bold text, dark color */
 header nav ul li a {
     text-decoration: none;
     color: #333;
@@ -40,10 +46,12 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* Changes link color on hover */
 header nav ul li a:hover {
     color: #000;
 }
 
+/* Main section styling - horizontal layout with space around content */
 main {
     display: flex;
     justify-content: space-around;
@@ -53,10 +61,12 @@ main {
     background-color: #f4f4f4;
 }
 
+/* Introduction text styling - limits the max width for readability */
 .introduction {
     max-width: 50%;
 }
 
+/* Pink color for subheading and spacing between elements */
 .introduction h2 {
     font-size: 36px;
     color: #c98c96;
@@ -64,6 +74,7 @@ main {
     font-family: 'Georgia', serif;
 }
 
+/* Main heading styling - large font for prominent display */
 .introduction h1 {
     font-size: 49px;
     font-family: 'Georgia', serif;
@@ -71,33 +82,39 @@ main {
     margin-bottom: 20px;
 }
 
+/* Additional heading */
 .introduction h3 {
     font-size: 28px;
     color: #555;
     margin-bottom: 10px;
 }
 
+/* Paragraph text styling for the introduction */
 .introduction p {
     font-size: 18px;
     color: #666;
     line-height: 1.8;
 }
 
-.profile-image img{
+/* Profile image styling - fixes height */
+.profile-image img {
     width: auto;
     height: 504px;
 }
 
-.family{
-display: flex;
-flex-direction: column;
+/* Family section - flex column layout */
+.family {
+    display: flex;
+    flex-direction: column;
 }
 
+/* Centered text for family header */
 .family-header {
     text-align: center;
     padding: 20px 0;
 }
 
+/* Large font for family header */
 .family-header h1 {
     font-size: 60px;
     color: #333;
@@ -105,12 +122,14 @@ flex-direction: column;
     margin-bottom: 10px;
 }
 
+/* Special styling for the 'Live' text */
 .family-header .live {
     font-size: 30px;
     color: #d47783; 
     font-family: 'Brush Script MT', cursive;
 }
 
+/* Family grid layout - 6 columns for family members */
 .family-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
@@ -118,21 +137,25 @@ flex-direction: column;
     padding: 30px;
 }
 
+/* Styling for individual family members */
 .family-member {
     text-align: center;
 }
 
+/* Family member image size */
 .family-member img {
     width: 100px;
     height: auto;
 }
 
+/* Family member name styling */
 .family-member h2 {
     font-size: 24px;
     font-family: 'Georgia', serif;
     margin: 10px 0;
 }
 
+/* Family member description styling */
 .family-member p {
     font-size: 14px;
     color: #666;
@@ -141,16 +164,19 @@ flex-direction: column;
     margin: 0 auto;
 }
 
-.education{
+/* Education section - flex column layout */
+.education {
     display: flex;
     flex-direction: column;
 }
 
+/* Education section header */
 .education-header {
     text-align: center;
     padding: 17px 0;
 }
 
+/* Large font for education title */
 .education-header h1 {
     font-size: 60px;
     color: #333;
@@ -158,12 +184,14 @@ flex-direction: column;
     margin-bottom: 10px;
 }
 
+/* Special styling for the author's name */
 .education-header .author {
     font-size: 30px;
     color: #d47783; 
     font-family: 'Brush Script MT', cursive;
 }
 
+/* Education grid layout - flexbox */
 .education-grid {
     display: flex;
     justify-content: center;
@@ -172,6 +200,7 @@ flex-direction: column;
     padding: 30px;
 }
 
+/* Education block styling - adds background, shadow, and padding */
 .education-block {
     background-color: #fff;
     padding: 20px;
@@ -182,40 +211,47 @@ flex-direction: column;
     position: relative;
 }
 
+/* Heading for each education block */
 .education-block h2 {
     font-size: 28px;
     font-family: 'Georgia', serif;
     margin-bottom: 10px;
 }
 
+/* Subheading for the education block */
 .education-block h3 {
     font-size: 20px;
     color: #666;
     margin-bottom: 15px;
 }
 
+/* List styling within education blocks */
 .education-block ul {
     list-style-type: disc;
     text-align: left;
     margin-left: 20px;
 }
 
+/* List item styling */
 .education-block ul li {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
 }
 
+/* Paragraph text within education block */
 .education-block p {
     font-size: 14px;
     color: #666;
 }
 
+/* Hover effect for education block - enlarges slightly */
 .education-block:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
+/* Decorative tape effect above education block */
 .education-block::before {
     content: '';
     position: absolute;
@@ -228,16 +264,19 @@ flex-direction: column;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 }
 
-.hobby{
+/* Hobby section - flex column layout */
+.hobby {
     display: flex;
     flex-direction: column;
 }
 
+/* Hobby section header */
 .hobbies-header {
     text-align: center;
     padding: 20px 0;
 }
 
+/* Large font for hobbies section */
 .hobbies-header h1 {
     font-size: 60px;
     color: #333;
@@ -245,12 +284,14 @@ flex-direction: column;
     margin-bottom: 10px;
 }
 
+/* Styling for "Favourite" text */
 .hobbies-header .favourite {
     font-size: 30px;
     color: #d47783; 
     font-family: 'Brush Script MT', cursive;
 }
 
+/* Grid layout for hobbies section */
 .hobbies-grid {
     display: flex;
     justify-content: center;
@@ -259,33 +300,39 @@ flex-direction: column;
     padding: 30px;
 }
 
+/* Individual hobby item styling */
 .hobby-item {
     text-align: center;
     max-width: 250px;
 }
 
+/* Image inside each hobby item */
 .hobby-item img {
     width: 100px;
     height: auto;
     margin-bottom: 20px;
 }
 
+/* Paragraph styling for hobby item descriptions */
 .hobby-item p {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
 }
 
-.contact{
+/* Contact section - flex column layout */
+.contact {
     display: flex;
     flex-direction: column;
 }
 
+/* Contact section header */
 .contact-header {
     text-align: center;
     padding: 30px 0;
 }
 
+/* Large font for contact title */
 .contact-header h1 {
     font-size: 60px;
     color: #333;
@@ -293,12 +340,14 @@ flex-direction: column;
     margin-bottom: 10px;
 }
 
+/* Styling for "with me" text */
 .contact-header .withme {
     font-size: 30px;
     color: #d47783; 
     font-family: 'Brush Script MT', cursive;
 }
 
+/* Grid layout for contact section */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,88 +357,105 @@ flex-direction: column;
     text-align: center;
 }
 
+/* Contact item styling */
 .contact-item {
     display: flex;
     gap: 15px;
 }
 
+/* Contact item image styling */
 .contact-item img {
     width: 50px;
     height: auto;
     margin-bottom: 20px;
 }
 
+/* Paragraph text for contact item */
 .contact-item p {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
 }
 
+/* Link styling inside contact items */
 .contact-item a {
     color: #333;
     text-decoration: none;
 }
 
+/* Hover effect for contact links - changes color and adds underline */
 .contact-item a:hover {
     color: #c98c96; 
     text-decoration: underline; 
 }
 
-.contact-info{
+/* Contact info layout */
+.contact-info {
     display: flex;
     flex-direction: column;
 }
 
+/* Hover effect for contact item images */
 .contact-item img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2); /* Increases size slightly on hover */
 }
 
+/* Education Table styling */
 .education-table {
     margin-top: 30px;
     text-align: center;
     padding-bottom: 30px;
 }
 
+/* Education table header styling */
 .education-table h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #333; 
+    color: #333; /* Dark gray for table headers */
 }
 
+/* Basic table styling with collapsed borders and white background */
 .education-table table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff; 
+    background-color: #fff; /* White table background */
 }
 
+/* Table cells and header cells */
 .education-table th, .education-table td {
     border: 1px solid #ddd;
     padding: 10px;
 }
 
+/* Table header styling with pink background and bold text */
 .education-table th {
     background-color: #c98c96; 
     font-weight: bold;
     color: black; 
 }
 
+/* Table data cell styling */
 .education-table td {
     font-size: 16px;
     color: #666; 
 }
 
-@media(max-width: 923px){
+/* Media Queries */
+
+/* Adjusts education blocks on smaller screens */
+@media(max-width: 923px) {
     .education-block { 
         width: 350px;
     }
 }
 
+/* Adjusts family grid and profile image size on screens 867px or smaller */
 @media (max-width: 867px) {
     .family-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 columns in one row */
         gap: 20px;
     }
-    .profile-image img{
+    .profile-image img {
         width: 350px;
         height: 450px;
     }
@@ -399,18 +465,20 @@ flex-direction: column;
     .introduction h1 {
         font-size: 40px;
     }
-    .introduction h2{
+    .introduction h2 {
         font-size: 28px;
     }
 }
 
-@media(max-width: 825px){
+/* Stacks the education grid for smaller screens */
+@media(max-width: 825px) {
     .education-grid {
         flex-direction: column;
         gap: 20px;
-    } 
+    }
 }
 
+/* Adjusts contact grid and hobbies grid for mobile screens */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -423,7 +491,7 @@ flex-direction: column;
     .hobbies-header h1 {
         font-size: 40px;
     }
-    .education-header h1{
+    .education-header h1 {
         font-size: 40px;
     }
     .education-table table, .education-table th, .education-table td {
@@ -437,31 +505,33 @@ flex-direction: column;
         max-width: 100%;
         margin-bottom: 20px;
     }
-    .profile-image img{
+    .profile-image img {
         width: 380px;
         height: 450px;
     }
 }
 
-@media(max-width: 545px){
-    header nav ul{
+/* Hides the navigation menu on smaller screens, shows the burger menu icon */
+@media(max-width: 545px) {
+    header nav ul {
         display: none;
     }
-    header{
+    header {
         padding: 25px;
     }
-    header img{
+    header img {
         display: block;
         width: 25px;
     }
-    .contact-header span{
+    .contact-header span {
         display: flex;
         flex-direction: column;
     }
 }
 
+/* Adjustments for very small screens (450px and below) */
 @media (max-width: 450px) {
-    .contact-header span{
+    .contact-header span {
         display: flex;
         flex-direction: column;
     }
@@ -471,23 +541,23 @@ flex-direction: column;
     .hobby-item p {
         font-size: 12px;
     }
-    .education-header span{
+    .education-header span {
         display: flex;
         flex-direction: column;
-    } 
-    .education-block p{
+    }
+    .education-block p {
         font-size: 12px; 
     }
     .education-block ul li {
         font-size: 12px;
     }
-    .education-block h2{
+    .education-block h2 {
         font-size: 24px;
     }
-    .education-header h1{
+    .education-header h1 {
         font-size: 35px;
     }
-    .education-block { 
+    .education-block {
         width: 290px;
     }
     .family-grid {
@@ -500,26 +570,27 @@ flex-direction: column;
     .introduction h1 {
         font-size: 35px;
     }
-    .introduction h2{
+    .introduction h2 {
         font-size: 23px;
     }
-    .introduction h3{
+    .introduction h3 {
         font-size: 20px;
     }
-    .profile-image img{
+    .profile-image img {
         width: 350px;
         height: 400px;
     }
 }
 
-@media(max-width: 400px){
+/* Final adjustments for screens smaller than 400px */
+@media(max-width: 400px) {
     .introduction h1 {
         font-size: 26px;
     }
-    .introduction p{
+    .introduction p {
         font-size: 13px;
     }
-    .introduction h2{
+    .introduction h2 {
         font-size: 20px;
     }
 }
